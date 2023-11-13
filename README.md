@@ -149,3 +149,11 @@ Ultimately we chose to save the Bayesian Model with a Loss: 0.48945945501327515 
 ## Alternative Methods & Summary
 
 Either model tuner method could have been chosen to complete the model. RandomSearch is also avaialble as a tuner. Additonally, randomtrees could be used to do feature selection and further enhance the pre processing as well as keras_tuner preprocessing. We were able to meet the criteria of getting a model above 75%. The main problem we had to tackle during optimization was overfitting and chose to increase noise in the data set by normalizng the name field. Tensorflow also has methods for generating noise in a data set. Advancement of these models would be seeking to make them more resource efficient by not choosing multiple keras tuners and balancing load and learning speed as part of optimization to determine the fastest way to train the models. 
+
+### Best Hyperband parameters
+
+Hyperband values: {'units': 180, 'dropout': 0.35000000000000003, 'num_layers': 2, 'units_0': 36, 'activation_0': 'relu', 'units_1': 6, 'activation_1': 'relu', 'units_2': 41, 'activation_2': 'tanh', 'units_3': 31, 'activation_3': 'tanh', 'units_4': 11, 'activation_4': 'relu', 'tuner/epochs': 25, 'tuner/initial_epoch': 9, 'tuner/bracket': 2, 'tuner/round': 2, 'tuner/trial_id': '0013'}
+
+### Best Bayesian parameters
+
+Bayesian values: {'units': 60, 'dropout': 0.05, 'num_layers': 5, 'units_0': 21, 'activation_0': 'relu', 'units_1': 76, 'activation_1': 'relu', 'units_2': 56, 'activation_2': 'tanh', 'units_3': 6, 'activation_3': 'tanh', 'units_4': 86, 'activation_4': 'relu'}
