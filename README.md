@@ -148,4 +148,4 @@ Ultimately we chose to save the Bayesian Model with a Loss: 0.48945945501327515 
 
 ## Alternative Methods & Summary
 
-Either model tuner method could have been chosen to complete the model. RandomSearch is also avaialble as a tuner. Additonally, randomtrees could be used to do feature selection and further enhance the pre processing as well as keras_tuner preprocessing. 
+Either model tuner method could have been chosen to complete the model. RandomSearch is also avaialble as a tuner. Additonally, randomtrees could be used to do feature selection and further enhance the pre processing as well as keras_tuner preprocessing. We were able to meet the criteria of getting a model above 75%. The main problem we had to tackle during optimization was overfitting and chose to increase noise in the data set by normalizng the name field. Tensorflow also has methods for generating noise in a data set. Advancement of these models would be seeking to make them more resource efficient by not choosing multiple keras tuners and balancing load and learning speed as part of optimization to determine the fastest way to train the models. 
